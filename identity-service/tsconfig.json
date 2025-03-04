@@ -1,12 +1,27 @@
+// {
+//     "compilerOptions": {
+//       "esModuleInterop": true,
+//       "target": "ESNext",
+//       "module": "ESNext",
+//       "moduleResolution": "node",
+//       "sourceMap": true,
+//       "skipLibCheck": true,
+//       "strict": true,
+//       "outDir": "dist",
+//       "forceConsistentCasingInFileNames": true
+//     },
+//     "include": ["src/**/*.ts"],
+//     "exclude": ["node_modules", "dist"]
+//   }
 {
-    "compilerOptions": {
-      "module": "ESNext",
-      "esModuleInterop": true,
-      "target": "es6",
-      "moduleResolution": "node",
-      "sourceMap": true,
-      "outDir": "dist"
-    },
-    "include": ["src/**/*.ts"],
-    "exclude": ["node_modules", "dist"]
-  }
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*.ts", "jest.config.js"],
+  "exclude": ["node_modules", "dist"]
+}
