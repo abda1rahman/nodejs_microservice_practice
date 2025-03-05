@@ -1,10 +1,10 @@
-import User from "../models/user.model.js";
-import { generateToken } from "../utils/generateToken.js";
-import { logger } from "../utils/logger.js"
-import { validateRegisration } from "../utils/validation.js";
+import User from "../models/user.model";
+import { generateToken } from "../utils/generateToken";
+import { logger } from "../utils/logger"
+import { validateRegisration } from "../utils/validation";
 
 // USER REGISTRATION
-export const registerUser = async (req, res) => {
+export const registerUser = async (req:any, res:any) => {
     logger.info('Regisration endpoint hit...');
     try {
         const {error, value} = validateRegisration(req.body);
@@ -29,7 +29,7 @@ export const registerUser = async (req, res) => {
         await user.save();
         logger.warn("User saved successfully", user._id)
 
-        const {refreshToken, accessToken} = await generateToken(user)
+        const {refreshToken, accessToken}: any = await generateToken(user)
 
         res.status(201).json({
             success: true,

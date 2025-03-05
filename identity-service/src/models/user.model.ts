@@ -34,13 +34,13 @@ userSchema.pre('save', async function save(next) {
         try {
             this.password = await argon2.hash(this.password);
 
-        } catch (error) {
+        } catch (error:any) {
             return next(error);
         }
     }
 })
 
-userSchema.methods.comparePassword = async function(candidatePassword){
+userSchema.methods.comparePassword = async function(candidatePassword:any){
     try {
         return await argon2.verify(this.password, candidatePassword)
     } catch (error) {

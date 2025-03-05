@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
-import RefreshToken from "../middleware/refreshToken.js";
-import { logger } from "./logger.js";
+import RefreshToken from "../middleware/refreshToken";
+import { logger } from "./logger";
 
 
 export const generateToken = async (user) => {
@@ -11,7 +11,7 @@ export const generateToken = async (user) => {
         username: user.username,
       },
       process.env.jWT_SECRET || '',
-      { expiresIn: "60m " }
+      { expiresIn: "60m" }
     );
     const refreshToken = jwt.sign(
       {

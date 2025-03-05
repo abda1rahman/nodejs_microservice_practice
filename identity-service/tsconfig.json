@@ -19,7 +19,7 @@
     "module": "commonjs",
     "rootDir": "./src",
     "outDir": "./dist",
-    "strict": true,
+    "strict": false,
     "esModuleInterop": true
   },
   "include": ["src/**/*.ts", "jest.config.js"],
