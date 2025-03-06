@@ -19,6 +19,8 @@ mongoose.connect(process.env.MONGO_URL || "")
 .then(() => logger.info("Connected to mongodb"))
 .catch((e) => logger.error("Mongo connection error" , e))
 
+const PORT = process.env.PORT || 3001
+
 // connect to Redis
 // const redisClient = new Redis(process.env.REDIS_URL as string)
 
@@ -71,3 +73,11 @@ app.use('/api/auth/register', sensitiveEndpointsLimiter)
 app.use('/api/auth',userRoutes);
 
 app.use(errorHandler)
+
+app.listen(PORT, () => {
+    logger.info(`Idnetity service running one port ${PORT}`)
+})
+
+process.on('unhandleRejection', (reson, promise) => {
+    logger.error('unhandleRejection at', promise, "reson:", reson)
+})
