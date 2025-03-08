@@ -1,5 +1,5 @@
 import 'dotenv/config'
-import { logger } from './utils/logger'
+import { logger, morganLog } from './utils/logger'
 import express from 'express'
 import cors from 'cors'
 import helmet from 'helmet'
@@ -8,6 +8,9 @@ import RedisStore from 'rate-limit-redis'
 import rateLimit from 'express-rate-limit'
 import proxy from 'express-http-proxy'
 import { errorHandler } from './middleware/errorHandler'
+import { BadRequestError } from './errors/BadRequestError'
+import { DatabaseError } from './errors/DatabaseError'
+import { tryCatch } from './utils/tryCatch'
 
 
 
@@ -19,6 +22,8 @@ const PORT = process.env.PORT || 3000;
 app.use(cors())
 app.use(helmet())
 app.use(express.json())
+
+app.use(morganLog)
 
 const proxyOptions =  {
     proxyReqPathResolver(req) {
@@ -64,6 +69,17 @@ app.use('/v1/auth', proxy(process.env.IDENTITY_SERVICE_URL, {
 // })
 
 // app.use(rateLimiter);
+
+const getUser = () => undefined;
+
+app.all('*', tryCatch(async(req, res)=> {
+    const user = getUser();
+  if(!user) {
+    throw new DatabaseError('Error in connection Database');
+  }
+
+  return res.status(200).json({success: true})
+}))
 
 app.use((req, res, next) => {
     logger.info(`Received ${req.method} request to ${req.url}`)

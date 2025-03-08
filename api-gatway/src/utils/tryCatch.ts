@@ -1,0 +1,10 @@
+import { logger } from "./logger"
+
+export const tryCatch = (controller) => async (req, res, next) => {
+    try {
+        await controller(req, res);
+    } catch (error) {
+        logger.error(error);
+        return next(error)
+    }
+}

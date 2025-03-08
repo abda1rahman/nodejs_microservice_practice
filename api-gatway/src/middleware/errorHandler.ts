@@ -1,19 +1,23 @@
+import { ErrorRequestHandler, NextFunction, Request, Response } from "express";
 import { logger } from "../utils/logger";
+import { DatabaseError } from "../errors/DatabaseError";
+import { AuthError } from "../errors/AuthError";
+import { BadRequestError } from "../errors/BadRequestError";
+import { CustomError } from "../errors/CustomError";
 
-export const errorHandler = (err, req, res, next) =>{
-logger.error(err.stack)
+export const errorHandler: ErrorRequestHandler = (
+  error,
+  req: Request,
+  res: Response,
+  next: NextFunction
+): any => {
+  logger.error(error.stack);
 
-res.status(err.status || 500).json({
-    message: err.message || "Internal server error",
-})
-}
-
-export class AppError extends Error {
-    errorCode: any;
-    status: any;
-    constructor(errorCode, message, statusCode) {
-        super(message);
-        this.errorCode = errorCode;
-        this.status = statusCode;
+    if(error instanceof CustomError){
+        return res.status(error.statusCode).json(error.serialize())
     }
-}
+
+  return res.status(error.status || 500).json({
+    message: error.message || "Internal server error",
+  });
+};
