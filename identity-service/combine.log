@@ -467,3 +467,90 @@
 {"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-03-09T05:57:22.141Z"}
 {"level":"info","message":"Request body {\"email\":\"abdalrahman@gmail.com\",\"password\":\"123456\"}","service":"identity-service","timestamp":"2025-03-09T05:57:22.143Z"}
 >>>>>>> main
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:16:43.077Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:16:43.106Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:17:11.713Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:17:11.744Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:31:11.717Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:31:11.744Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:31:57.438Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:31:57.474Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:34:37.544Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:34:37.559Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:34:43.214Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:34:43.230Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:36:29.014Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:36:29.034Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:36:52.294Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:36:52.316Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:36:57.553Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:36:57.574Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:37:17.913Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:37:17.930Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:42:59.889Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:42:59.906Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:43:13.163Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:43:13.178Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:43:25.024Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:43:25.051Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:44:12.081Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:44:12.098Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:45:20.797Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:45:20.813Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:45:31.496Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:45:31.517Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:45:39.924Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:45:39.953Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:46:04.368Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:46:04.382Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:46:51.603Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:46:51.620Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:46:58.265Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:46:58.281Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:47:10.721Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:47:10.738Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:47:56.760Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:47:56.786Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:48:05.536Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:48:05.551Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:48:11.434Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:48:11.452Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:49:17.051Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:49:17.068Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:49:39.044Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:49:39.059Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:51:10.044Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:51:10.063Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:51:28.409Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:51:28.423Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:53:08.244Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:53:08.259Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:53:22.151Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:53:22.167Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T21:53:52.870Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T21:53:52.890Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T22:01:53.124Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T22:01:53.140Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T22:12:56.527Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T22:12:56.544Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":\"164.074\"}","service":"identity-service","timestamp":"2025-03-09T22:13:00.318Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T22:13:43.392Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T22:13:43.407Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T22:13:57.418Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T22:13:57.434Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T22:16:22.455Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T22:16:22.470Z"}
+{"level":"info","message":"Input: {\"email\":\"abdalrahman@gmail.com\",\"password\":\"123456\"}","service":"identity-service","timestamp":"2025-03-09T22:16:40.205Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":\"158.659\"}","service":"identity-service","timestamp":"2025-03-09T22:16:40.367Z"}
+{"level":"info","message":"Input: {\"email\":\"abdalrahman@gmail.com\",\"password\":\"123456\"}","service":"identity-service","timestamp":"2025-03-09T22:16:51.386Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":\"125.514\"}","service":"identity-service","timestamp":"2025-03-09T22:16:51.513Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T22:17:42.049Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T22:17:42.063Z"}
+{"level":"info","message":"Input: {\"email\":\"abdalrahman@gmail.com\",\"password\":\"123456\"}","service":"identity-service","timestamp":"2025-03-09T22:17:42.840Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":\"162.249\"}","service":"identity-service","timestamp":"2025-03-09T22:17:43.007Z"}
+{"level":"info","message":"Idnetity service running one port 3001","service":"identity-service","timestamp":"2025-03-09T22:18:06.109Z"}
+{"level":"info","message":"Connected to mongodb","service":"identity-service","timestamp":"2025-03-09T22:18:06.125Z"}
+{"level":"info","message":"Input: {\"email\":\"abdalrahman@gmail.com\",\"password\":\"123456\"}","service":"identity-service","timestamp":"2025-03-09T22:18:27.893Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":\"169.960\"}","service":"identity-service","timestamp":"2025-03-09T22:18:28.068Z"}
+{"level":"info","message":"Input: {\"email\":\"abdalrahman@gmail.com\",\"password\":\"123456\"}","service":"identity-service","timestamp":"2025-03-09T22:20:04.887Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":\"134.799\"}","service":"identity-service","timestamp":"2025-03-09T22:20:05.023Z"}

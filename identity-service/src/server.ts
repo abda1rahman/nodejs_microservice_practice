@@ -6,12 +6,11 @@ import cors from 'cors'
 import { RateLimiterRedis } from "rate-limiter-flexible";
 import Redis from 'ioredis';
 
-import { logger } from "./utils/logger"
+import { logger, morganLog } from "./utils/logger"
 import rateLimit from 'express-rate-limit';
 import RedisStore from 'rate-limit-redis';
 import userRoutes from './routes/identity.router';
 import { errorHandler } from './middleware/errorHandler';
-import morgan from 'morgan';
 
 const app = express()
 
@@ -44,6 +43,12 @@ const PORT = process.env.PORT || 3001
 app.use(helmet())
 app.use(cors())
 app.use(express.json())
+
+app.use((req, res, next) => {
+    logger.info(`Input: ${JSON.stringify(req.body)}`)
+    next();
+})
+app.use(morganLog)
 
 // app.use(morgan(':method :url :status :res[content-length] - :response-time ms') ,(req, res, next) => {
     

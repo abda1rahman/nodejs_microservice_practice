@@ -70,8 +70,6 @@ app.use('/v1/auth', proxy(process.env.IDENTITY_SERVICE_URL, {
 
 // app.use(rateLimiter);
 
-const getUser = () => undefined;
-
 // app.all('*', tryCatch(async(req, res)=> {
 //     const user = getUser();
 //   if(!user) {
@@ -80,12 +78,6 @@ const getUser = () => undefined;
 
 //   return res.status(200).json({success: true})
 // }))
-
-app.use((req, res, next) => {
-    logger.info(`Received ${req.method} request to ${req.url}`)
-    logger.info(`Request body, ${req.body}`);
-    next()
-})
 
 app.use(errorHandler)
 
