@@ -11,6 +11,7 @@ import rateLimit from 'express-rate-limit';
 import RedisStore from 'rate-limit-redis';
 import userRoutes from './routes/identity.router';
 import { errorHandler } from './middleware/errorHandler';
+import morgan from 'morgan';
 
 const app = express()
 
@@ -44,11 +45,12 @@ app.use(helmet())
 app.use(cors())
 app.use(express.json())
 
-app.use((req, res, next) => {
-    logger.info(`Received ${req.method} request to ${req.url}`)
-    logger.info(`Request body ${req.body}`)
-    next();
-})
+// app.use(morgan(':method :url :status :res[content-length] - :response-time ms') ,(req, res, next) => {
+    
+//     logger.info(`Received ${req.method} request to ${req.url}`)
+//     logger.info(`Request body ${JSON.stringify(req.body)}`)
+//     next();
+// })
 
 // Ip based rate limiting for sensitive endpoints 
 const sensitiveEndpointsLimiter = rateLimit({
