@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import RefreshToken from "../middleware/refreshToken";
+import RefreshToken from "../models/refreshToken";
 import { logger } from "./logger";
 
 
