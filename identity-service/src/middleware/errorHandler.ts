@@ -1,19 +1,23 @@
+import { ErrorRequestHandler, NextFunction, Request, Response } from "express";
 import { logger } from "../utils/logger";
+import { AppError } from "../utils/AppError";
 
-export const errorHandler = (err, req, res, next) =>{
-logger.error(err.stack)
-
-res.status(err.status || 500).json({
-    message: err.message || "Internal server error",
-})
+declare global {
+    interface Error {
+        isOperational?: boolean;
+        statusCode?:number;
+    }
 }
 
-export class AppError extends Error {
-    errorCode: any;
-    status: any;
-    constructor(errorCode, message, statusCode) {
-        super(message);
-        this.errorCode = errorCode;
-        this.status = statusCode;
+export const errorHandler: ErrorRequestHandler =  (err:Error, req:Request, res:Response, next: NextFunction):any => {
+    logger.error(err.stack)
+
+    if(err instanceof AppError){
+        return res.status(err.statusCode).json({success:false, message: err.message})
     }
+
+    return res.status(500).json({
+        message: "Internal server error",
+    })
+
 }

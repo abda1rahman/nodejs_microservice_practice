@@ -27,3 +27,49 @@
 {"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-09T21:45:39.597Z"}
 {"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-09T21:53:51.980Z"}
 {"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-09T22:12:28.747Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T00:48:49.725Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T00:50:48.417Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T00:50:49.616Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T00:54:43.011Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T01:14:25.346Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T01:14:36.601Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T01:14:38.338Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T01:18:55.180Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T01:19:26.140Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T01:19:27.411Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T02:08:22.313Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T02:30:49.685Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T02:30:51.764Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T02:43:18.908Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T17:49:52.230Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T17:50:13.969Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T17:50:15.809Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T17:50:35.506Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T17:50:36.897Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gatway","timestamp":"2025-03-10T17:50:38.418Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T17:50:49.722Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gatway","timestamp":"2025-03-10T17:51:03.349Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T17:51:08.367Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T17:51:19.263Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gatway","timestamp":"2025-03-10T17:51:56.494Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T17:51:59.564Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T17:52:01.005Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T17:52:16.465Z"}
+{"level":"error","message":"SyntaxError: Expected double-quoted property name in JSON at position 44\n    at JSON.parse (<anonymous>)\n    at parse (E:\\Tutorial\\course_node_js\\social_media\\api-gatway\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n    at E:\\Tutorial\\course_node_js\\social_media\\api-gatway\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)\n    at invokeCallback (E:\\Tutorial\\course_node_js\\social_media\\api-gatway\\node_modules\\raw-body\\index.js:238:16)\n    at done (E:\\Tutorial\\course_node_js\\social_media\\api-gatway\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (E:\\Tutorial\\course_node_js\\social_media\\api-gatway\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:519:28)\n    at IncomingMessage.emit (node:domain:488:12)\n    at endReadableNT (node:internal/streams/readable:1696:12)","service":"api-gatway","timestamp":"2025-03-10T18:21:24.231Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T18:21:49.655Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T18:21:52.082Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T18:21:54.694Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T18:22:16.483Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T18:22:37.741Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T18:22:38.647Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T18:22:39.461Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T19:45:53.266Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T20:02:38.618Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T20:13:22.423Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T20:13:24.471Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T20:49:01.961Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T20:55:05.007Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T20:55:18.129Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T20:55:19.447Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T20:55:20.473Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-10T20:55:52.920Z"}

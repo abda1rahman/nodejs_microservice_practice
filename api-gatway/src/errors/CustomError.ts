@@ -4,5 +4,5 @@ export abstract class CustomError extends Error {
     constructor(public message: string){
         super(message)
     }
-    abstract serialize(): {success: boolean ,message: string}
+    abstract serialize(): {success: boolean ,message: string} 
 }

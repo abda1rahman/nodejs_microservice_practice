@@ -3,8 +3,8 @@ import { CustomError } from "./CustomError";
 export class DatabaseError extends CustomError {
     statusCode = 500;
     _message:string;
-    constructor(_message?:string){
-        super('Database crashed. Try again later');
+    constructor(){
+        super('Database crashed. Try again later..');
         Object.setPrototypeOf(this, DatabaseError.prototype)
     }
 
