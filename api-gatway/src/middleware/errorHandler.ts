@@ -1,9 +1,7 @@
 import { ErrorRequestHandler, NextFunction, Request, Response } from "express";
 import { logger } from "../utils/logger";
-import { DatabaseError } from "../errors/DatabaseError";
-import { AuthError } from "../errors/AuthError";
-import { BadRequestError } from "../errors/BadRequestError";
-import { CustomError } from "../errors/CustomError";
+import { AppError } from "../utils/AppError";
+
 
 export const errorHandler: ErrorRequestHandler = (
   error,
@@ -13,8 +11,8 @@ export const errorHandler: ErrorRequestHandler = (
 ): any => {
   logger.error(error.stack);
 
-    if(error instanceof CustomError){
-        return res.status(error.statusCode).json(error.serialize())
+    if(error instanceof AppError){
+        return res.status(error.statusCode).json({success: false, message: error.message})
     }
 
   return res.status(error.status || 500).json({
