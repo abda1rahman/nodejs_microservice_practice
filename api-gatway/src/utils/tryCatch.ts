@@ -2,9 +2,9 @@ import { logger } from "./logger"
 
 export const tryCatch = (controller) => async (req, res, next) => {
     try {
-        await controller(req, res);
+        await controller(req, res, next);
     } catch (error) {
         logger.error(error);
-        return next(error)
+        next(error)
     }
 }

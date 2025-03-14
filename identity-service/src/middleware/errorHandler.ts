@@ -2,12 +2,6 @@ import { ErrorRequestHandler, NextFunction, Request, Response } from "express";
 import { logger } from "../utils/logger";
 import { AppError } from "../utils/AppError";
 
-declare global {
-    interface Error {
-        isOperational?: boolean;
-        statusCode?:number;
-    }
-}
 
 export const errorHandler: ErrorRequestHandler =  (err:Error, req:Request, res:Response, next: NextFunction):any => {
     logger.error(err.stack)

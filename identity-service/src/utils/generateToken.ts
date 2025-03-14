@@ -25,7 +25,7 @@ export const generateToken = async (user) => {
      await RefreshToken.create({
         token: refreshToken,
         user: user._id,
-        expiresAt: new Date(Date.now() + 7 * 24 * 3600)
+        expiresAt: new Date(Date.now() + 7 * 24 * 3600 * 1000)
     })
 
       return {accessToken, refreshToken}
