@@ -237,3 +237,8 @@
 {"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gatway","timestamp":"2025-03-21T13:41:55.007Z"}
 {"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-21T13:49:04.441Z"}
 {"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-21T13:49:05.819Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-21T20:51:02.256Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-21T22:44:27.775Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-21T22:44:29.547Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-21T22:44:30.758Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-21T22:44:34.202Z"}

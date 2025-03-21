@@ -22,18 +22,32 @@ async function connectRabbitMQ(){
 }
 
     async function publishEvent(routingKey, message){
-        try {
             if(!channel){
                 await connectRabbitMQ()
             }
-            await channel.publish(EXCHANGE_NAME, routingKey, Buffer.from(JSON.stringify(message)))
+            channel.publish(EXCHANGE_NAME, routingKey, Buffer.from(JSON.stringify(message)))
             logger.info(`Event published: ${routingKey}`)
-        } catch (error) {
-        
+    }
+
+    async function consumeEvent(routingKey, callback){
+        if(!channel){
+            await connectRabbitMQ();
         }
+
+        const q = await channel.assertQueue("", {exclusive: true});
+        await channel.bindQueue(q.queue, EXCHANGE_NAME, routingKey)
+        await channel.consume(q.queue, (msg)=> {
+            if(msg !== null){
+                const content = JSON.parse(msg.content.toString())
+                callback(content)
+                channel.ack(msg)
+            }
+        })
+        logger.info(`Subscribed to event: ${routingKey}`)
     }
 
 export {
     connectRabbitMQ,
-    publishEvent
+    publishEvent,
+    consumeEvent
 }

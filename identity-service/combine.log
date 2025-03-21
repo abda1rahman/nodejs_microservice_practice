@@ -1555,3 +1555,5 @@
 {"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":\"117.345\"}","service":"identity-service","timestamp":"2025-03-21T13:34:10.158Z"}
 {"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":\"131.514\"}","service":"identity-service","timestamp":"2025-03-21T14:40:46.713Z"}
 {"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":\"176.177\"}","service":"identity-service","timestamp":"2025-03-21T15:30:14.448Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":\"144.913\"}","service":"identity-service","timestamp":"2025-03-21T20:48:57.870Z"}
+{"level":"info","message":"{\"method\":\"POST\",\"url\":\"/api/auth/login\",\"status\":\"200\",\"responseTime\":\"132.635\"}","service":"identity-service","timestamp":"2025-03-21T22:44:24.764Z"}

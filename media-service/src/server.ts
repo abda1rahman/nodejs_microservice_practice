@@ -6,6 +6,8 @@ import { logger, morganLog } from './utils/logger';
 import { errorHandler } from './middleware/errorHandler';
 import mongoose from 'mongoose';
 import mediaRoutes from './routes/media.routes'
+import { connectRabbitMQ, consumeEvent } from './utils/rabbitmq';
+import { handlePostDeleted } from './eventHandlers/media.event';
 
 const app = express()
 
@@ -29,9 +31,23 @@ app.use('/api/media', mediaRoutes)
 
 app.use(errorHandler);
 
-app.listen(PORT, ()=> {
-    logger.info(`media-service running on port ${PORT}`);
-})
+async function startServer(){
+    try {
+        await connectRabbitMQ()
+
+        //consume all the event 
+        await consumeEvent('post.deleted', handlePostDeleted)
+
+        app.listen(PORT, ()=> {
+            logger.info(`Media-service running on port ${PORT}`);
+        })
+    } catch (error) {
+        logger.error('Failed to connect to server', error)   
+        process.exit(1)
+    }
+}
+
+startServer()
 
 process.on('unhandleRejection', (reson, promise) => {
     logger.error('unhandleRejection at', promise, "reson:", reson)

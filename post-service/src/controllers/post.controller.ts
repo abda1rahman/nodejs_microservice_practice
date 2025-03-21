@@ -2,10 +2,9 @@ import { Request, Response } from "express";
 import { asyncHandler } from "../utils/asyncHandler";
 import { validateCreatePost } from "../utils/Validation";
 import { AppError } from "../utils/AppError";
-import User from "../models/user.model";
 import { logger } from "../utils/logger";
 import { Post } from "../models/Post";
-import mongoose from "mongoose";
+import { publishEvent } from "../utils/rabbitmq";
 
  const createPost = asyncHandler(async (req, res:Response) => {
     logger.info('postController hit')
@@ -93,6 +92,12 @@ const deletePost = asyncHandler(async(req, res) => {
     if(!post){
         throw new AppError('Post not found', 404);
     }
+
+    await publishEvent('post.deleted', {
+        postId: post._id.toString(),
+        userId: req.user.userId,
+        mediaIds: post.mediaIds
+    })
 
     await invalidateReids(req, postId)
 

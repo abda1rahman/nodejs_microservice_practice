@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getAllPosts, createPost, getPost, deletePost } from "../controllers/post-controller";
+import { getAllPosts, createPost, getPost, deletePost } from "../controllers/post.controller";
 import { authenticated } from "../middleware/authMiddleware";
 
 const router = Router();
