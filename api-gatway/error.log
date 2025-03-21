@@ -140,3 +140,68 @@
 {"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-13T23:53:09.415Z"}
 {"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-13T23:53:10.762Z"}
 {"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-14T00:14:23.478Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-16T02:15:28.942Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-16T02:16:37.428Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-16T02:16:47.673Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gatway","timestamp":"2025-03-16T02:30:10.977Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-16T02:30:13.081Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-16T02:32:36.885Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gatway","timestamp":"2025-03-16T02:32:39.356Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gatway","timestamp":"2025-03-16T02:38:24.696Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-16T02:38:27.201Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-16T02:38:51.670Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gatway","timestamp":"2025-03-16T02:40:45.312Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gatway","timestamp":"2025-03-16T02:41:01.250Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gatway","timestamp":"2025-03-16T02:45:01.803Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gatway","timestamp":"2025-03-16T02:46:13.188Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gatway","timestamp":"2025-03-16T02:47:02.713Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gatway","timestamp":"2025-03-16T02:47:31.756Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-16T02:48:02.845Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gatway","timestamp":"2025-03-19T08:16:04.796Z"}
+{"level":"error","message":"Proxy error: write ECONNRESET","service":"api-gatway","timestamp":"2025-03-20T13:50:52.626Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-20T13:51:17.956Z"}
+{"level":"error","message":"Proxy error: write ECONNRESET","service":"api-gatway","timestamp":"2025-03-20T13:53:34.324Z"}
+{"level":"error","message":"Proxy error: write ECONNRESET","service":"api-gatway","timestamp":"2025-03-20T13:54:04.725Z"}
+{"level":"error","message":"Proxy error: write ECONNRESET","service":"api-gatway","timestamp":"2025-03-20T13:54:30.727Z"}
+{"level":"error","message":"Proxy error: write ECONNRESET","service":"api-gatway","timestamp":"2025-03-20T13:56:24.512Z"}
+{"level":"error","message":"Proxy error: write ECONNRESET","service":"api-gatway","timestamp":"2025-03-20T13:56:54.455Z"}
+{"level":"error","message":"Proxy error: write ECONNRESET","service":"api-gatway","timestamp":"2025-03-20T13:58:17.389Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-20T14:11:55.744Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-20T14:11:57.170Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-20T14:14:35.284Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gatway","timestamp":"2025-03-20T14:23:21.268Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-20T14:23:58.520Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-20T14:23:59.925Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gatway","timestamp":"2025-03-20T14:24:28.756Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-20T14:27:29.336Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gatway","timestamp":"2025-03-20T14:28:04.819Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gatway","timestamp":"2025-03-20T14:31:32.795Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gatway","timestamp":"2025-03-20T14:32:47.746Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gatway","timestamp":"2025-03-20T14:35:13.135Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gatway","timestamp":"2025-03-20T14:35:56.215Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-20T15:39:40.656Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-20T15:39:44.231Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-20T15:39:53.035Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-20T15:40:05.194Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-20T15:40:18.848Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-20T15:44:01.069Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-20T15:44:02.405Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-20T15:44:36.381Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-20T15:44:43.333Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-20T15:44:56.068Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-20T15:45:31.233Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-20T15:46:48.106Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-20T15:47:28.615Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-20T15:47:56.020Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-20T15:48:59.247Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-20T15:49:01.024Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-20T15:49:39.237Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-20T15:50:00.609Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-20T15:50:02.445Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-21T01:59:20.608Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-21T01:59:39.163Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-21T02:20:56.021Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-21T02:21:57.942Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-21T02:22:23.180Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gatway","timestamp":"2025-03-21T02:23:02.711Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gatway","timestamp":"2025-03-21T03:08:52.773Z"}

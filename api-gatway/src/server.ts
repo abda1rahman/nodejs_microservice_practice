@@ -60,6 +60,22 @@ app.use('/v1/posts', validateToken,  proxy(process.env.POST_SERVICE_URL, {
     }
     }))
 
+app.use('/v1/media', validateToken,  proxy(process.env.MEDIA_SERVICE_URL, {
+    ...proxyOptions,
+    proxyReqOptDecorator: (proxyReqOpts, srcReq:any) => {
+        proxyReqOpts.headers['x-user-id'] =  srcReq.user.userId;
+        if(!srcReq.headers["content-type"].startsWith("multipart/form-data")){
+            proxyReqOpts.headers['Content-Type'] = "application/json";
+        }
+        return proxyReqOpts
+    },
+    userResDecorator: function(proxyRes, proxyResData, userReq, userRes) {
+        logger.info(`Response received from media service`)
+        return proxyResData
+    },
+    parseReqBody: false
+    }))
+
 const redisClient = new Redis( process.env.REDIS_URL, {password: '1997'})
 
 const rateLimiter = rateLimit({
@@ -90,6 +106,7 @@ app.listen(PORT, () => {
     logger.info(`API Gateway is running on port ${PORT}`)
     logger.info(`Identity service is running on port ${process.env.IDENTITY_SERVICE_URL}`)
     logger.info(`post service is running on port ${process.env.POST_SERVICE_URL}`)
+    logger.info(`meida service is running on port ${process.env.MEDIA_SERVICE_URL}`)
     // logger.info(`Redis URL ${process.env.REDIS_URL}`)
 })
 
