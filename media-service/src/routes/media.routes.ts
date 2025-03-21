@@ -3,7 +3,7 @@ import { logger } from "../utils/logger";
 import multer from 'multer'
 import { authenticated } from "../middleware/authMiddleware";
 import { AppError } from "../utils/AppError";
-import { uploadMedia } from "../controllers/media.controller";
+import { deleteMedia, getAllMedia, uploadMedia } from "../controllers/media.controller";
 import { asyncHandler } from "../utils/asyncHandler";
 
 
@@ -30,5 +30,8 @@ router.post('/upload', authenticated, asyncHandler(async (req, res, next)=> {
     })
 
 }),uploadMedia)
+
+router.get('/get',authenticated,  getAllMedia)
+router.delete('/delete/:id',authenticated,  deleteMedia)
 
 export default router;

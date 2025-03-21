@@ -44,10 +44,6 @@ app.use(helmet())
 app.use(cors())
 app.use(express.json())
 
-app.use((req, res, next) => {
-    logger.info(`Input: ${JSON.stringify(req.body)}`)
-    next();
-})
 app.use(morganLog)
 
 // app.use(morgan(':method :url :status :res[content-length] - :response-time ms') ,(req, res, next) => {

@@ -1,12 +1,12 @@
 import { asyncHandler } from "../utils/asyncHandler";
 import { logger } from "../utils/logger";
 import { AppError } from "../utils/AppError";
-import { uploadMediaToCloudinary } from "../utils/cloudinary";
+import { deleteCloudinary, uploadMediaToCloudinary } from "../utils/cloudinary";
 import Media from "../models/Media";
+import mongoose, { Types } from "mongoose";
 
 const uploadMedia = asyncHandler(async(req, res):Promise<any>=> {
     logger.info('Starting media upload')
-    console.log(req.file)
     if(!req.file){
         logger.error('No file found. please try again.');
         throw new AppError('file not exist', 400)
@@ -37,6 +37,32 @@ const uploadMedia = asyncHandler(async(req, res):Promise<any>=> {
 
 })
 
+const deleteMedia = asyncHandler(async(req, res)=> {
+  const id = req.params.id;
+  const userId =  req.user.userId;
+
+  const media:any = await Media.findById(id);
+  if(!media){
+    return res.status(404).json({success: false, message: 'media not exist'})
+  }
+  if(media.userId.toString() !== userId.toString()){
+    return res.status(401).json({success: false, message: 'You didn\'t have permession to delete this post'})
+  }
+
+  await deleteCloudinary(media.publicId)
+
+  return res.status(200).json({success: true, message: 'post deleted successfully'});
+})
+
+const getAllMedia = asyncHandler(async(req, res)=> {
+
+    const media = await Media.find();
+
+    res.status(200).json({success: true, result: media})
+})
+
 export {
-    uploadMedia
+    uploadMedia,
+    deleteMedia,
+    getAllMedia
 }

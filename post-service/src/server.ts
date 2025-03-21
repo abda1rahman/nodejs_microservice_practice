@@ -7,6 +7,7 @@ import { errorHandler } from './middleware/errorHandler';
 import { logger, morganLog } from './utils/logger';
 import mongoose from 'mongoose';
 import Redis from 'ioredis';
+import { connectRabbitMQ } from './utils/rabbitmq';
 
 const app = express();
 
@@ -40,10 +41,20 @@ app.use('/api/posts',
 
 app.use(errorHandler)
 
-app.listen(PORT, ()=> {
-    logger.info(`Post-service is running on port: ${PORT}`)
+async function startServer(){
+    try {
+        await connectRabbitMQ()
+        
+        app.listen(PORT, ()=> {
+            logger.info(`Post-service is running on port: ${PORT}`)
+        })
+    } catch (error) {
+        logger.error('Failed to connect to server', error)
+        process.exit(1);
+    }
+}
 
-})
+startServer()
 
 process.on('unhandleRejection', (reson, promise) => {
     logger.error('unhandleRejection at', promise, "reson:", reson)

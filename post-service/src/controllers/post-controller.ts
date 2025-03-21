@@ -74,6 +74,8 @@ const getPost = asyncHandler(async(req, res)=> {
         throw new AppError('Post not found', 404);
     }
 
+    const mediaIds = await fetch('http://localhost:3000/')
+
     await req.redisClient.setex(cachekey, 3600, JSON.stringify(singlePost))
 
     return res.status(200).json({success: true, result: singlePost})
